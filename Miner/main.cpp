@@ -30,14 +30,15 @@ int main(int argc, char *argv[]) {
   QAction *newAct2 = new QAction(QObject::tr("&About Qt"), &mainWindow); // кнопка для показа версии Qt
   QObject::connect(newAct2, SIGNAL(triggered()), &field, SLOT(on_gameReset2())); // связь через нажатие, и функцию класса Mediator (см. void Mediator::on_gameReset2())
   menuBar->addAction(newAct2);
-
-  QAction *newAct3 = new QAction(QObject::tr("&Exit"), &mainWindow); // кнопка для выхода
-  QObject::connect(newAct3, SIGNAL(triggered()), &field, SLOT(exit())); // связь через нажатие, и функцию класса Mediator (см. void Mediator::exit())
+  
+    QAction *newAct3 = new QAction(QObject::tr("&Rules"), &mainWindow); // правила игры
+  QObject::connect(newAct3, SIGNAL(triggered()), &field, SLOT(rules())); // связь через нажатие, и функцию класса Mediator (см. void Mediator::rules())
   menuBar->addAction(newAct3);
 
-  QAction *newAct4 = new QAction(QObject::tr("&Rules"), &mainWindow); // правила игры
-  QObject::connect(newAct4, SIGNAL(triggered()), &field, SLOT(rules())); // связь через нажатие, и функцию класса Mediator (см. void Mediator::rules())
+  QAction *newAct4 = new QAction(QObject::tr("&Exit"), &mainWindow); // кнопка для выхода
+  QObject::connect(newAct4, SIGNAL(triggered()), &field, SLOT(exit())); // связь через нажатие, и функцию класса Mediator (см. void Mediator::exit())
   menuBar->addAction(newAct4);
+
 
 
 
