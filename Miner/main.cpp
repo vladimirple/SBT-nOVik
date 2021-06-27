@@ -6,7 +6,6 @@
 #include <QMessageBox>
 #include <QWidget>
 #include <QPoint>
-#include "clock.h"
 
 int main(int argc, char *argv[]) {
   QApplication a(argc, argv);
@@ -14,7 +13,6 @@ int main(int argc, char *argv[]) {
   Mediator field; // игровое поле
   QMenuBar *menuBar; // меню
   QMainWindow mainWindow; // главное окно
-  Clock m_time;
 
   mainWindow.setStyleSheet("background-color: rgba(24, 140, 134, 200)"); //установка цвета для главного окна и поля с клетками
   mainWindow.show();
