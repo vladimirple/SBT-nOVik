@@ -18,6 +18,7 @@ int main(int argc, char *argv[]) {
 
   mainWindow.setStyleSheet("background-color: rgba(24, 140, 134, 200)"); //установка цвета для главного окна и поля с клетками
   mainWindow.show();
+  mainWindow.setWindowOpacity(0.9); //прозачность окна
   field.setStyleSheet("background-color: rgba(173, 217, 195, 1)");
   mainWindow.setCentralWidget(&field); // центральный виджет для field
 
