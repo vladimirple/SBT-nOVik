@@ -7,7 +7,7 @@ class QGridLayout;
 class Clock;
 class Field;
 
-//! посредник между полем и таймером
+// посредник между полем и таймером
 class Mediator :public QWidget {
   Q_OBJECT
 public:
